@@ -24,16 +24,16 @@ export default function About() {
         <SectionHeading>About Me</SectionHeading>
         <p className="mb-3">
             After earning a degree in{" "}
-            <span className="font-medium">Coumputer Science and Engineering</span>,  I decided to channel my passion for programming into a {" "}
+            <span className="font-medium">Computer Science and Engineering</span>, I decided to channel my passion for programming into a {" "}
             <span className="font-medium">full-stack web development</span>.{" "}
             <span className="italic">My favorite aspect of programming</span> is the
-            problem-solving aspect; there's an <span className="underline">unparalleled satisfaction</span> in finding solutions to complex challenges. My core technical stack
+            problem-solving aspect; there&apos;s an <span className="underline">unparalleled satisfaction</span> in finding solutions to complex challenges. My core technical stack
             includes{" "}
             <span className="font-medium">
                 React, Next.js, Node.js, and MongoDB
             </span>
-            .Besides, I am also familiar with TypeScript and Prisma. I am committed to continuous learning and staying updated with emerging technologies. Currently, I am seeking a {" "}
-            <span className="font-medium">full-time position</span>  software developer position.
+            . Besides, I am also familiar with TypeScript and Prisma. I am committed to continuous learning and staying updated with emerging technologies. Currently, I am seeking a {" "}
+            <span className="font-medium">full-time position</span> software developer position.
         </p>
 
         <p>
