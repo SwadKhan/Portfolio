@@ -34,7 +34,7 @@ export default function Contact() {
             <SectionHeading>
                 Contact Me
             </SectionHeading>
-            <p className='text-gray-700 -mt-6 dark:text-white/80'>Please contact me directly at<a className='underline' href='mailto:example@gmail.com'> example@gmail.com </a> or through this form.</p>
+            <p className='text-gray-700 -mt-6 dark:text-white/80'>Please contact me directly at<a className='underline' href='mailto:swad.mustasin.khan@gmail.com'> swad.mustasin.khan@gmail.com </a> or through this form.</p>
 
             <form className='mt-10 flex flex-col dark:text-black'
                 action={async (formData) => {

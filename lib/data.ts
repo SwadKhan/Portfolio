@@ -1,12 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { FaShieldAlt, FaFlask } from "react-icons/fa";
 import visaHubImg from "@/public/Visa_hub.png";
-import corpcommentImg from "@/public/corpcomment.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
-import languageImg from "@/public/languageClub.png";
 import dragonNews from "@/public/dragonNews.png";
+import languageImg from "@/public/languageClub.png";
 
 export const links = [
     {
@@ -16,6 +14,10 @@ export const links = [
     {
         name: "About",
         hash: "#about",
+    },
+    {
+        name: "Security",
+        hash: "#security",
     },
     {
         name: "Projects",
@@ -37,92 +39,162 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Academic Graduation",
-        location: "BRAC University,Dhaka.",
+        title: "B.Sc. in Computer Science & Engineering",
+        location: "BRAC University, Dhaka",
         description:
-            "I graduated from BRAC University with a degree in Computer Science and Engineering. I immediately began searching for opportunities to work as a software engineer.",
+            "Completed my undergraduate degree in Computer Science & Engineering, building the software-engineering foundation I now apply to security research and secure system design.",
         icon: React.createElement(LuGraduationCap),
         date: "2023",
     },
     {
-        title: "Software Developer",
-        location: "BRAC BANK(Head Office),Dhaka.",
+        title: "Software Developer (Intern)",
+        location: "BRAC Bank (Head Office), Dhaka",
         description:
-            "During the internship with a dynamic team, I received hands-on experience in Java, JavaScript, CSS, and DOM manipulation. I improved my web development abilities, discovered the nuances of teamwork, and gained practical knowledge of tech applications through close collaboration.",
+            "Worked in a fintech engineering team on web applications, gaining first-hand exposure to the security requirements of banking systems — authentication, transaction integrity, and secure data handling.",
         icon: React.createElement(CgWorkAlt),
-        date: "July,2023 - Oct,2023",
+        date: "Jul 2023 - Oct 2023",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Dhaka,Bangladesh",
+        title: "M.Sc. Cybersecurity — Web Security & Cryptology",
+        location: "CyberMACS / Kadir Has University, Istanbul",
         description:
-            "I am currently advancing my career as a full-stack developer, specializing in a stack that includes React, Next.js, TypeScript, Tailwind, Prisma, and MongoDB. I am open to full-time opportunities.",
-        icon: React.createElement(FaReact),
-        date: "2021 - present",
+            "Graduate study focused on applied cryptography, web security, and privacy-preserving machine learning, deepening the theoretical foundations behind my research and offensive-security work.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2024 - present",
     },
+    {
+        title: "Research Assistant — IoT & Critical-Infrastructure Security",
+        location: "TÜBİTAK-funded project, Kadir Has University",
+        description:
+            "Designed and implemented a benchmarking harness for secure aggregation in federated learning, measuring latency, communication overhead, and energy cost on the Edge-IIoT dataset (PyTorch, scikit-learn). Co-authored a Springer LNNS paper on cyber-physical defence of smart grids.",
+        icon: React.createElement(FaFlask),
+        date: "2025 - present",
+    },
+] as const;
+
+// ── Offensive-security experience (Hack The Box) ──────────────────────────────
+// POLICY NOTE: high-level overviews only — vulnerability CLASS and public CVE
+// references, NO step-by-step exploitation. This keeps the showcase compliant
+// with Hack The Box's content rules while still evidencing skill.
+// TODO(Swad): verify each machine is RETIRED and correct the technique/CVE
+// fields to match your actual solve before deploying.
+export const securityData = [
+    {
+        machine: "Cicada",
+        os: "Windows",
+        difficulty: "Easy",
+        category: "Active Directory",
+        overview:
+            "Domain enumeration via SMB and password-spraying led to credential access; escalation abused an over-privileged account and a backup operator misconfiguration to reach Domain Administrator.",
+        techniques: ["SMB enumeration", "Password spraying", "AD privilege abuse"],
+        cve: [] as string[],
+    },
+    {
+        machine: "Sedna",
+        os: "Linux",
+        difficulty: "Medium",
+        category: "Web → RCE → Privesc",
+        overview:
+            "An outdated web platform exposed a known remote-code-execution flaw for the initial foothold; local privilege escalation exploited a misconfigured setuid/capability vector.",
+        techniques: ["Web exploitation", "Known-CVE RCE", "Linux privilege escalation"],
+        cve: ["CVE (verify exact ID)"],
+    },
+    {
+        machine: "Reactor",
+        os: "Linux",
+        difficulty: "Medium",
+        category: "Web Application",
+        overview:
+            "Chained an authentication weakness with a server-side injection to gain execution, then pivoted through an exposed service to escalate privileges.",
+        techniques: ["Auth bypass", "Server-side injection", "Service pivoting"],
+        cve: [] as string[],
+    },
+    {
+        machine: "Wallos",
+        os: "Linux",
+        difficulty: "Medium",
+        category: "Web / CVE Analysis",
+        overview:
+            "Reproduced a publicly disclosed vulnerability in a self-hosted application to obtain code execution, documented root cause and the corresponding vendor fix.",
+        techniques: ["CVE reproduction", "Source review", "Remediation write-up"],
+        cve: ["CVE (verify exact ID)"],
+    },
+    {
+        machine: "Pterodactyl",
+        os: "Linux",
+        difficulty: "Hard",
+        category: "Container / Escape",
+        overview:
+            "Gained a foothold in a constrained application context, then escalated through a container/host boundary misconfiguration to compromise the underlying host.",
+        techniques: ["Container security", "Host escape", "Privilege escalation"],
+        cve: [] as string[],
+    },
+    {
+        machine: "WingData",
+        os: "Linux",
+        difficulty: "Medium",
+        category: "Data Service Exploitation",
+        overview:
+            "Exploited an exposed data/API service to leak credentials, then reused them against internal services to move laterally and escalate.",
+        techniques: ["API abuse", "Credential reuse", "Lateral movement"],
+        cve: [] as string[],
+    },
+] as const;
+
+export const certsData = [
+    "Cisco Certified Network Associate (CCNA)",
+    "Microsoft AZ-500: Azure Security Engineer (in progress)",
+    "Hack The Box — Silver tier (AI/LLM & ICS/OT paths)",
 ] as const;
 
 export const projectsData = [
     {
-        title: "The Language Club",
+        title: "ChatBotPRO — LLM Application",
         description:
-            "The Language Club aims to break down language barriers and foster seamless communication through language learning. Our platform provides tools for learning Japanese, helping users unlock new opportunities by embracing linguistic diversity.",
-        tags: ["React","Javascript","HTML", "CSS", "MySQl", "Tailwind"],
-        imageUrl: languageImg,
-        projectUrl:"https://language-club-5f147.web.app/"
-    },
-    {
-        title: "Dragon News",
-        description:
-            "Dragon News is a dynamic news platform where users can explore the latest news across various categories. The site features advanced filtering, sorting, and pagination for a seamless browsing experience. Admins have full control over content management and site updates.",
-        tags: ["React", "TypeScript", "Tailwind", "Redux", "MongoDB"],
+            "A deployed LLM-powered chat application (Python, Streamlit) built with a security lens: prompt-injection hardening, API-key hygiene, and safe handling of user input. Framed as LLM application security rather than a demo.",
+        tags: ["Python", "Streamlit", "LLM Security", "Prompt Injection"],
         imageUrl: dragonNews,
-        projectUrl: "https://dragon-news-24c24.web.app/category/01"
+        projectUrl: "https://chatbotpro-fnivcyjrojgjema6cqoumv.streamlit.app/",
     },
     {
-        title: "Visa Hub",
+        title: "Federated Learning Secure-Aggregation Benchmark",
         description:
-            "Visa Hub is a platform that simplifies the visa application process for users. The site provides detailed information on visa requirements, application procedures, and travel restrictions. Users can easily access visa forms, track their application status, and receive updates.",
-        tags: ["React", "Javascript", "Tailwind", "Redux", "MongoDB"],
+            "Research harness (TÜBİTAK) measuring the real cost of secure aggregation in federated learning — latency, communication overhead, and energy — on the Edge-IIoT dataset. Basis for ongoing work on sparse, privacy-preserving FL for critical infrastructure.",
+        tags: ["PyTorch", "Federated Learning", "Privacy", "Research"],
         imageUrl: visaHubImg,
-        projectUrl:"https://visa-hub-8885f.web.app/"
+        projectUrl: "https://github.com/SwadKhan",
     },
     {
-        title: "Covid Monitoring & Helping Site",
+        title: "Dragon News (Engineering Background)",
         description:
-            "Users can easily find recommendations on vaccines, hospitals, available donors, and COVID-19 updates. Additionally, the admin has full authority to implement reliable changes within the system.",
-        tags: ["PHP", "HTML", "CSS", "MySQl", "Tailwind"],
-        imageUrl: corpcommentImg,
-        projectUrl:"https://github.com/SwadKhan/CovidUA"
-    },
-    {
-        title: "Bank Management",
-        description:
-            "A public banking website featuring account creation, fund transfers, withdrawals, and balance inquiries.",
-        tags: ["Java", "Tomcat", "SQL", "Tailwind", "JavaScript"],
-        imageUrl: wordanalyticsImg,
-         projectUrl:"https://github.com/SwadKhan/BankManagement"
+            "Full-stack news platform with filtering, sorting, pagination, and admin content control — representative of my software-engineering foundation, which lets my security research ship as reproducible, production-quality code.",
+        tags: ["React", "TypeScript", "Tailwind", "MongoDB"],
+        imageUrl: languageImg,
+        projectUrl: "https://dragon-news-24c24.web.app/category/01",
     },
 ] as const;
 
 export const skillsData = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Git",
-    "Tailwind",
-    "Prisma",
-    "MongoDB",
-    "Redux",
-    "GraphQL",
-    "Apollo",
-    "Express",
-    "PostgreSQL",
+    // Security
+    "Penetration Testing",
+    "Active Directory",
+    "Web Exploitation",
+    "Privilege Escalation",
+    "Network Security",
+    "Applied Cryptography",
+    "LLM / AI Security",
+    "OSINT & Enumeration",
+    // Research / ML
     "Python",
-    "Django",
-    "Framer Motion",
+    "PyTorch",
+    "scikit-learn",
+    "Federated Learning",
+    "OpenDSS",
+    // Tooling / Engineering
+    "Nmap",
+    "Burp Suite",
+    "Linux",
+    "Bash",
+    "Git",
+    "React / Next.js",
 ] as const;

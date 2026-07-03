@@ -23,23 +23,20 @@ export default function About() {
     >
         <SectionHeading>About Me</SectionHeading>
         <p className="mb-3">
-            After earning a degree in{" "}
-            <span className="font-medium">Computer Science and Engineering</span>, I decided to channel my passion for programming into a {" "}
-            <span className="font-medium">full-stack web development</span>.{" "}
-            <span className="italic">My favorite aspect of programming</span> is the
-            problem-solving aspect; there&apos;s an <span className="underline">unparalleled satisfaction</span> in finding solutions to complex challenges. My core technical stack
-            includes{" "}
-            <span className="font-medium">
-                React, Next.js, Node.js, and MongoDB
-            </span>
-            . Besides, I am also familiar with TypeScript and Prisma. I am committed to continuous learning and staying updated with emerging technologies. Currently, I am seeking a {" "}
-            <span className="font-medium">full-time position</span> software developer position.
+            I work on the question of{" "}
+            <span className="font-medium">what&apos;s worth protecting in distributed systems</span>. As a{" "}
+            <span className="font-medium">Research Assistant</span> on a TÜBİTAK-funded IoT &amp; Critical-Infrastructure Security project, I built the harness that measures what{" "}
+            <span className="italic">secure aggregation</span> really costs in federated learning, and I co-authored a{" "}
+            <span className="font-medium">Springer LNNS paper</span> on defending smart grids against cyber-physical attacks. My background spans{" "}
+            <span className="font-medium">machine-learning research, applied cryptography, and hands-on offensive security</span>.
         </p>
 
         <p>
-            <span className="italic"> Outside of coding, </span>, I enjoy playing football, watching movies, and sketching. I also have a keen interest in {" "}
-            <span className="font-medium">learning new subjects, </span> particularly {" "}
-            <span className="font-medium">history and philosophy</span>.
+            I came to security from{" "}
+            <span className="font-medium">full-stack engineering</span>, which is why my experiments ship as working, reproducible code. On{" "}
+            <span className="font-medium">Hack The Box</span> I&apos;ve reached{" "}
+            <span className="underline">Silver tier</span> across Active Directory, web, and privilege-escalation challenges. I&apos;m building toward a{" "}
+            <span className="font-medium">PhD in privacy-preserving machine learning for critical systems</span>.
         </p>
     </motion.section >)
 }

@@ -9,8 +9,8 @@ import ThemeContextProvider from '@/context/theme-context';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Swad | Personal Portfolio',
-  description: 'I am persuing my career in this vast dynamic tech world',
+  title: 'Swad Mustasin Khan | Cybersecurity Researcher & Red-Teamer',
+  description: 'Cybersecurity researcher working on privacy-preserving machine learning for critical infrastructure. TÜBİTAK research assistant, Springer author, Hack The Box red-teamer.',
 }
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='!scroll-smooth'>
-      <body className={`${inter.className}bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
+      <body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
         <div className='bg-[#fbe2e3] absolute top-[-6rem] -z-10
         right-[11rem] h-[31.25rem] w-[31.25rem] 
         rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]'></div>

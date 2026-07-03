@@ -60,11 +60,11 @@ export default function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                <span className="font-bold">Hello, I&apos;m Swad.</span> I&apos;m {" "}
-                <span className="font-bold"> passionate about technology</span> and enthusiastically pursuing a career as {" "}
-                <span className="font-bold">a full-stack developer </span>in this dynamic field. I enjoy
-                exploring <span className="italic">cutting-edge technologies, </span>with a focus on the {" "}
-                <span className="underline">MERN stack.</span>
+                <span className="font-bold">Hello, I&apos;m Swad.</span> I&apos;m a {" "}
+                <span className="font-bold">cybersecurity researcher</span> working on {" "}
+                <span className="font-bold">privacy-preserving machine learning for critical infrastructure</span> — and an active {" "}
+                <span className="italic">red-teamer</span> on {" "}
+                <span className="underline">Hack The Box</span>. I benchmark secure aggregation for federated learning, and I break systems to understand how they fail.
             </motion.h1>
             <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
                 initial={{ opacity: 0, y: 100 }}
