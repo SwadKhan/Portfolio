@@ -4,8 +4,6 @@ import { projectsData } from '@/lib/data'
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-import Link from 'next/link';
-
 type ProjectProps = (typeof projectsData)[number];
 export default function Project({
     title, description, tags, imageUrl, projectUrl
@@ -39,12 +37,11 @@ export default function Project({
                             <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70' key={index}>{tag}</li>
                         ))}
                     </ul>
-                    <Link href={projectUrl} passHref>
-                        <button className='mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition'>Visit Project</button>
-                    </Link>
+                    <a href={projectUrl} target="_blank" rel="noopener noreferrer"
+                        className='mt-4 self-start bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition'>Visit Project</a>
                 </div>
 
-                <Image src={imageUrl} alt="projects I worked" quality={95} className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+                <Image src={imageUrl} alt={title} quality={95} className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition
         group-hover:scale-[1.04]
         group-hover:-translate-x-3

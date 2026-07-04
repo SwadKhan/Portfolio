@@ -26,7 +26,7 @@ const diffBadge = (d: string) => {
 };
 
 export default function Security() {
-    const { ref } = useSectionInView("Security", 0.3);
+    const { ref } = useSectionInView("Security");
 
     return (
         <section

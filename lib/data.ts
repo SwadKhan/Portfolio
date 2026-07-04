@@ -4,7 +4,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import { FaShieldAlt, FaFlask } from "react-icons/fa";
 import visaHubImg from "@/public/Visa_hub.png";
 import dragonNews from "@/public/dragonNews.png";
-import languageImg from "@/public/languageClub.png";
+import chatbotProImg from "@/public/chatbotpro.png";
 
 export const links = [
     {
@@ -72,12 +72,12 @@ export const experiencesData = [
     },
 ] as const;
 
-// ── Offensive-security experience (Hack The Box) ──────────────────────────────
-// POLICY NOTE: high-level overviews only — vulnerability CLASS and public CVE
-// references, NO step-by-step exploitation. This keeps the showcase compliant
+// Offensive-security experience (Hack The Box)
+// POLICY NOTE: high-level overviews only (vulnerability CLASS and public CVE
+// references, NO step-by-step exploitation). This keeps the showcase compliant
 // with Hack The Box's content rules while still evidencing skill.
-// TODO(Swad): verify each machine is RETIRED and correct the technique/CVE
-// fields to match your actual solve before deploying.
+// TODO(Swad): verify each machine is RETIRED and add the exact CVE IDs for
+// your actual solves; cards render CVE chips only when the array is non-empty.
 export const securityData = [
     {
         machine: "Cicada",
@@ -97,7 +97,7 @@ export const securityData = [
         overview:
             "An outdated web platform exposed a known remote-code-execution flaw for the initial foothold; local privilege escalation exploited a misconfigured setuid/capability vector.",
         techniques: ["Web exploitation", "Known-CVE RCE", "Linux privilege escalation"],
-        cve: ["CVE (verify exact ID)"],
+        cve: [] as string[],
     },
     {
         machine: "Reactor",
@@ -117,7 +117,7 @@ export const securityData = [
         overview:
             "Reproduced a publicly disclosed vulnerability in a self-hosted application to obtain code execution, documented root cause and the corresponding vendor fix.",
         techniques: ["CVE reproduction", "Source review", "Remediation write-up"],
-        cve: ["CVE (verify exact ID)"],
+        cve: [] as string[],
     },
     {
         machine: "Pterodactyl",
@@ -149,11 +149,11 @@ export const certsData = [
 
 export const projectsData = [
     {
-        title: "ChatBotPRO: LLM Application",
+        title: "ChatBotPRO: RAG Chatbot",
         description:
-            "A deployed LLM-powered chat application (Python, Streamlit) built with a security lens: prompt-injection hardening, API-key hygiene, and safe handling of user input. Framed as LLM application security rather than a demo.",
-        tags: ["Python", "Streamlit", "LLM Security", "Prompt Injection"],
-        imageUrl: dragonNews,
+            "A deployed RAG chatbot (Python, Streamlit) that answers strictly from an uploadable knowledge base (PDF, image, PPTX), built with a security lens: prompt-injection hardening, API-key hygiene, and safe handling of user input.",
+        tags: ["Python", "Streamlit", "RAG", "LLM Security"],
+        imageUrl: chatbotProImg,
         projectUrl: "https://chatbotpro-fnivcyjrojgjema6cqoumv.streamlit.app/",
     },
     {
@@ -169,7 +169,7 @@ export const projectsData = [
         description:
             "Full-stack news platform with filtering, sorting, pagination, and admin content control, representative of my software-engineering foundation, which lets my security research ship as reproducible, production-quality code.",
         tags: ["React", "TypeScript", "Tailwind", "MongoDB"],
-        imageUrl: languageImg,
+        imageUrl: dragonNews,
         projectUrl: "https://dragon-news-24c24.web.app/category/01",
     },
 ] as const;
