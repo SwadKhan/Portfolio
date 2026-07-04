@@ -3,7 +3,7 @@ import React from 'react'
 import SectionHeading from './section-heading'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { experiencesData } from '@/lib/data';
+import { experiencesData, awardsData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
 import { useTheme } from '@/context/theme-context';
 export default function Experience() {
@@ -47,6 +47,20 @@ export default function Experience() {
                 ))
             }
         </VerticalTimeline>
+
+        <div className='mt-12 text-center'>
+            <h3 className='mb-4 text-lg font-semibold'>Honours &amp; Awards</h3>
+            <ul className='flex flex-wrap items-center justify-center gap-2'>
+                {awardsData.map((award) => (
+                    <li
+                        key={award}
+                        className='rounded-full border border-black/10 bg-white px-4 py-2 text-sm text-gray-800 shadow-sm dark:border-white/10 dark:bg-white/10 dark:text-white/80'
+                    >
+                        {award}
+                    </li>
+                ))}
+            </ul>
+        </div>
     </section>
     )
 }

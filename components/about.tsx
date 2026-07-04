@@ -27,7 +27,7 @@ export default function About() {
             <span className="font-medium">what&apos;s worth protecting in distributed systems</span>. As a{" "}
             <span className="font-medium">Research Assistant</span> on a TÜBİTAK-funded IoT &amp; Critical-Infrastructure Security project, I built the harness that measures what{" "}
             <span className="italic">secure aggregation</span> really costs in federated learning, and I co-authored a{" "}
-            <span className="font-medium">Springer LNNS paper</span> on defending smart grids against cyber-physical attacks. My background spans{" "}
+            <span className="font-medium">Springer paper (ICCDM-2026, in press)</span> on defending smart grids against cyber-physical attacks. My background spans{" "}
             <span className="font-medium">machine-learning research, applied cryptography, and hands-on offensive security</span>.
         </p>
 

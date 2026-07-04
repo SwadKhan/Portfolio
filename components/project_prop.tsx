@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 type ProjectProps = (typeof projectsData)[number];
 export default function Project({
-    title, description, tags, imageUrl, projectUrl
+    title, description, tags, imageUrl, projectUrl, repoUrl
 }: ProjectProps) {
     const ref = useRef<HTMLDivElement>(null)
     const { scrollYProgress } = useScroll({
@@ -37,8 +37,14 @@ export default function Project({
                             <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70' key={index}>{tag}</li>
                         ))}
                     </ul>
-                    <a href={projectUrl} target="_blank" rel="noopener noreferrer"
-                        className='mt-4 self-start bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition'>Visit Project</a>
+                    <div className='mt-4 flex gap-2'>
+                        <a href={projectUrl} target="_blank" rel="noopener noreferrer"
+                            className='bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition'>Visit Project</a>
+                        {repoUrl && (
+                            <a href={repoUrl} target="_blank" rel="noopener noreferrer"
+                                className='border border-black/20 px-4 py-2 rounded-lg hover:bg-black/5 transition dark:border-white/30 dark:hover:bg-white/10'>Source</a>
+                        )}
+                    </div>
                 </div>
 
                 <Image src={imageUrl} alt={title} quality={95} className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl

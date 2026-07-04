@@ -4,7 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { securityData, certsData } from "@/lib/data";
+import { securityData, certsData, publicationData } from "@/lib/data";
 
 const fadeIn = (delay: number) => ({
     initial: { opacity: 0, y: 60 },
@@ -45,6 +45,25 @@ export default function Security() {
                 Overviews only, no step-by-step exploitation, in line with Hack
                 The Box&apos;s content policy. Retired machines only.
             </p>
+
+            {/* Peer-reviewed publication */}
+            <motion.div
+                {...fadeIn(0)}
+                className="mb-10 rounded-xl border border-black/5 bg-gray-100 p-5 text-left dark:bg-white/10"
+            >
+                <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-300">
+                    Peer-Reviewed Publication
+                </p>
+                <h3 className="text-lg font-semibold dark:text-white">
+                    {publicationData.title}
+                </h3>
+                <p className="mt-1 text-sm text-gray-700 dark:text-white/70">
+                    {publicationData.authors}
+                </p>
+                <p className="mt-0.5 text-sm italic text-gray-500 dark:text-white/50">
+                    {publicationData.venue}
+                </p>
+            </motion.div>
 
             {/* Certifications strip */}
             <motion.ul

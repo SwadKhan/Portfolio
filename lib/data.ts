@@ -39,6 +39,14 @@ export const links = [
 
 export const experiencesData = [
     {
+        title: "B.Sc. Thesis: SAAD, Smartphone-Addiction Detection",
+        location: "BRAC University, Dhaka",
+        description:
+            "Detected smartphone addiction from seven days of usage and sensor data across 30 participants, combining K-Means/K-Medoids clustering with LSTM-based activity recognition; validated against SAS-SV scores with 87% accuracy.",
+        icon: React.createElement(FaFlask),
+        date: "2022 - 2023",
+    },
+    {
         title: "B.Sc. in Computer Science & Engineering",
         location: "BRAC University, Dhaka",
         description:
@@ -60,13 +68,13 @@ export const experiencesData = [
         description:
             "Graduate study focused on applied cryptography, web security, and privacy-preserving machine learning, deepening the theoretical foundations behind my research and offensive-security work.",
         icon: React.createElement(LuGraduationCap),
-        date: "2024 - present",
+        date: "2025 - present",
     },
     {
         title: "Research Assistant: IoT & Critical-Infrastructure Security",
         location: "TÜBİTAK-funded project, Kadir Has University",
         description:
-            "Designed and implemented a benchmarking harness for secure aggregation in federated learning, measuring latency, communication overhead, and energy cost on the Edge-IIoT dataset (PyTorch, scikit-learn). Co-authored a Springer LNNS paper on cyber-physical defence of smart grids.",
+            "Designed and implemented a benchmarking harness for secure aggregation in federated learning, measuring latency, communication overhead, and energy cost on the Edge-IIoT dataset (PyTorch, scikit-learn). Co-authored a Springer paper (ICCDM-2026, in press) on cyber-physical defence of smart grids.",
         icon: React.createElement(FaFlask),
         date: "2025 - present",
     },
@@ -142,19 +150,34 @@ export const securityData = [
 ] as const;
 
 export const certsData = [
+    "TryHackMe: Jr Penetration Tester (ID THM-95GASNDZHN)",
+    "TryHackMe: Web Application Pentesting",
+    "Hack The Box: AI Red Teamer path (in progress)",
     "Cisco Certified Network Associate (CCNA)",
-    "Microsoft AZ-500: Azure Security Engineer (in progress)",
     "Hack The Box: Silver tier (AI/LLM & ICS/OT paths)",
+] as const;
+
+export const publicationData = {
+    title: "Meta-Heuristic Optimization Approach for Cyber-Physical Defense in Smart Grids",
+    authors: "Swad Mustasin Khan, Sacha Labastie, Oğuzhan Ceylan",
+    venue: "ICCDM-2026, Springer (in press)",
+} as const;
+
+export const awardsData = [
+    "Vice Chancellor's List, 4 semesters (BRAC University)",
+    "50% merit scholarship, 10 consecutive semesters (BRAC University)",
+    "2nd Runner-Up, MIST Inter-University ICT Innovation Fest 2021",
 ] as const;
 
 export const projectsData = [
     {
-        title: "ChatBotPRO: RAG Chatbot",
+        title: "ChatBotPRO: Multi-Modal RAG System",
         description:
-            "A deployed RAG chatbot (Python, Streamlit) that answers strictly from an uploadable knowledge base (PDF, image, PPTX), built with a security lens: prompt-injection hardening, API-key hygiene, and safe handling of user input.",
-        tags: ["Python", "Streamlit", "RAG", "LLM Security"],
+            "A deployed multi-modal RAG system (LangChain, ChromaDB, Groq LLaMA 3.1) answering strictly from an uploadable knowledge base of PDFs, images (OCR), and PowerPoint files, with citation support. Built with prompt-injection hardening and API-key hygiene.",
+        tags: ["Python", "LangChain", "ChromaDB", "Streamlit"],
         imageUrl: chatbotProImg,
         projectUrl: "https://chatbotpro-fnivcyjrojgjema6cqoumv.streamlit.app/",
+        repoUrl: "https://github.com/SwadKhan/ChatBotPRO",
     },
     {
         title: "Federated Learning Secure-Aggregation Benchmark",
@@ -163,6 +186,7 @@ export const projectsData = [
         tags: ["PyTorch", "Federated Learning", "Privacy", "Research"],
         imageUrl: visaHubImg,
         projectUrl: "https://github.com/SwadKhan",
+        repoUrl: "",
     },
     {
         title: "Dragon News (Engineering Background)",
@@ -171,6 +195,7 @@ export const projectsData = [
         tags: ["React", "TypeScript", "Tailwind", "MongoDB"],
         imageUrl: dragonNews,
         projectUrl: "https://dragon-news-24c24.web.app/category/01",
+        repoUrl: "",
     },
 ] as const;
 
