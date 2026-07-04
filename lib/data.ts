@@ -50,12 +50,12 @@ export const experiencesData = [
         title: "Software Developer (Intern)",
         location: "BRAC Bank (Head Office), Dhaka",
         description:
-            "Worked in a fintech engineering team on web applications, gaining first-hand exposure to the security requirements of banking systems — authentication, transaction integrity, and secure data handling.",
+            "Worked in a fintech engineering team on web applications, gaining first-hand exposure to the security requirements of banking systems: authentication, transaction integrity, and secure data handling.",
         icon: React.createElement(CgWorkAlt),
         date: "Jul 2023 - Oct 2023",
     },
     {
-        title: "M.Sc. Cybersecurity — Web Security & Cryptology",
+        title: "M.Sc. Cybersecurity: Web Security & Cryptology",
         location: "CyberMACS / Kadir Has University, Istanbul",
         description:
             "Graduate study focused on applied cryptography, web security, and privacy-preserving machine learning, deepening the theoretical foundations behind my research and offensive-security work.",
@@ -63,7 +63,7 @@ export const experiencesData = [
         date: "2024 - present",
     },
     {
-        title: "Research Assistant — IoT & Critical-Infrastructure Security",
+        title: "Research Assistant: IoT & Critical-Infrastructure Security",
         location: "TÜBİTAK-funded project, Kadir Has University",
         description:
             "Designed and implemented a benchmarking harness for secure aggregation in federated learning, measuring latency, communication overhead, and energy cost on the Edge-IIoT dataset (PyTorch, scikit-learn). Co-authored a Springer LNNS paper on cyber-physical defence of smart grids.",
@@ -144,12 +144,12 @@ export const securityData = [
 export const certsData = [
     "Cisco Certified Network Associate (CCNA)",
     "Microsoft AZ-500: Azure Security Engineer (in progress)",
-    "Hack The Box — Silver tier (AI/LLM & ICS/OT paths)",
+    "Hack The Box: Silver tier (AI/LLM & ICS/OT paths)",
 ] as const;
 
 export const projectsData = [
     {
-        title: "ChatBotPRO — LLM Application",
+        title: "ChatBotPRO: LLM Application",
         description:
             "A deployed LLM-powered chat application (Python, Streamlit) built with a security lens: prompt-injection hardening, API-key hygiene, and safe handling of user input. Framed as LLM application security rather than a demo.",
         tags: ["Python", "Streamlit", "LLM Security", "Prompt Injection"],
@@ -159,7 +159,7 @@ export const projectsData = [
     {
         title: "Federated Learning Secure-Aggregation Benchmark",
         description:
-            "Research harness (TÜBİTAK) measuring the real cost of secure aggregation in federated learning — latency, communication overhead, and energy — on the Edge-IIoT dataset. Basis for ongoing work on sparse, privacy-preserving FL for critical infrastructure.",
+            "Research harness (TÜBİTAK) measuring the real cost of secure aggregation in federated learning (latency, communication overhead, and energy) on the Edge-IIoT dataset. Basis for ongoing work on sparse, privacy-preserving FL for critical infrastructure.",
         tags: ["PyTorch", "Federated Learning", "Privacy", "Research"],
         imageUrl: visaHubImg,
         projectUrl: "https://github.com/SwadKhan",
@@ -167,7 +167,7 @@ export const projectsData = [
     {
         title: "Dragon News (Engineering Background)",
         description:
-            "Full-stack news platform with filtering, sorting, pagination, and admin content control — representative of my software-engineering foundation, which lets my security research ship as reproducible, production-quality code.",
+            "Full-stack news platform with filtering, sorting, pagination, and admin content control, representative of my software-engineering foundation, which lets my security research ship as reproducible, production-quality code.",
         tags: ["React", "TypeScript", "Tailwind", "MongoDB"],
         imageUrl: languageImg,
         projectUrl: "https://dragon-news-24c24.web.app/category/01",

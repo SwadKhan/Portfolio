@@ -38,11 +38,11 @@ export default function Security() {
 
             <p className="-mt-4 mb-3 text-gray-700 dark:text-white/70">
                 Selected offensive-security work from Hack The Box, shown as
-                high-level findings — vulnerability class, techniques, and public
+                high-level findings: vulnerability class, techniques, and public
                 CVE references.
             </p>
             <p className="mb-8 text-sm italic text-gray-500 dark:text-white/50">
-                Overviews only — no step-by-step exploitation, in line with Hack
+                Overviews only, no step-by-step exploitation, in line with Hack
                 The Box&apos;s content policy. Retired machines only.
             </p>
 

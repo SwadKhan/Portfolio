@@ -37,23 +37,10 @@ export default function Intro() {
                             height={192}
                             quality="95"
                             priority={true}
-                            className='h-24 w-24 rounded-full
+                            className='h-36 w-36 rounded-full
                         object-cover border-[0.35rem] border-white shadow-xl'
                         />
                     </motion.div>
-
-                    <motion.span className='absolute bottom-0 right-0 text-4xl' initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{
-                            type: "spring",
-                            stiffness: 125,
-                            delay: 0.1,
-                            duration: 0.7
-                        }}
-                    >
-                        👋
-                    </motion.span>
-
                 </div>
             </div>
             <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
@@ -62,7 +49,7 @@ export default function Intro() {
             >
                 <span className="font-bold">Hello, I&apos;m Swad.</span> I&apos;m a {" "}
                 <span className="font-bold">cybersecurity researcher</span> working on {" "}
-                <span className="font-bold">privacy-preserving machine learning for critical infrastructure</span> — and an active {" "}
+                <span className="font-bold">privacy-preserving machine learning for critical infrastructure</span>, and an active {" "}
                 <span className="italic">red-teamer</span> on {" "}
                 <span className="underline">Hack The Box</span>. I benchmark secure aggregation for federated learning, and I break systems to understand how they fail.
             </motion.h1>
