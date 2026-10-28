@@ -52,7 +52,7 @@ export const experiencesData = [
         title: "B.Sc. in Computer Science & Engineering",
         location: "BRAC University, Dhaka",
         description:
-            "Completed my undergraduate degree in Computer Science & Engineering, building the software-engineering foundation I now apply to security research and secure system design.",
+            "Undergraduate degree in Computer Science & Engineering; the software-engineering grounding behind the reproducible tooling in my security research.",
         icon: React.createElement(LuGraduationCap),
         date: "2023",
     },
@@ -60,7 +60,7 @@ export const experiencesData = [
         title: "Software Developer (Intern)",
         location: "BRAC Bank (Head Office), Dhaka",
         description:
-            "Worked in a fintech engineering team on web applications, gaining first-hand exposure to the security requirements of banking systems: authentication, transaction integrity, and secure data handling.",
+            "Built web applications within a fintech engineering team, working to the security requirements of banking systems: authentication, transaction integrity, and secure data handling.",
         icon: React.createElement(CgWorkAlt),
         date: "Jul 2023 - Oct 2023",
     },

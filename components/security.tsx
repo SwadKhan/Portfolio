@@ -37,14 +37,13 @@ export default function Security() {
             <SectionHeading>Security Research &amp; CTF</SectionHeading>
 
             <p className="-mt-4 mb-3 text-gray-700 dark:text-white/70">
-                Selected offensive-security work from Hack The Box, shown as
-                high-level findings: vulnerability class, techniques, and public
-                CVE references.
+                Selected offensive-security work from Hack The Box, summarised by
+                vulnerability class and technique.
             </p>
             <p className="mb-8 text-sm italic text-gray-500 dark:text-white/50">
-                Overviews only, no step-by-step exploitation, in line with Hack
-                The Box&apos;s content policy. Active machines are listed as
-                solved only, with no details until they retire.
+                In line with Hack The Box&apos;s content policy, active machines
+                are listed as solved only; full details follow once a machine
+                retires.
             </p>
 
             {/* Peer-reviewed publication */}

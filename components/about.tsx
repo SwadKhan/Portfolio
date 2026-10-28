@@ -23,21 +23,20 @@ export default function About() {
     >
         <SectionHeading>About Me</SectionHeading>
         <p className="mb-3">
-            I work on the question of{" "}
-            <span className="font-medium">what&apos;s worth protecting in distributed systems</span>. As a{" "}
-            <span className="font-medium">Research Assistant</span> on a TÜBİTAK-funded IoT &amp; Critical-Infrastructure Security project, I built the harness that measures what{" "}
-            <span className="italic">secure aggregation</span> really costs in federated learning. In a separate case study I co-authored a{" "}
-            <span className="font-medium">Springer paper (ICCDM-2026, in press)</span> on defending smart grids against cyber-physical attacks, and I built{" "}
-            <span className="font-medium">MCP-Guard</span>, a security scanner for MCP servers. My background spans{" "}
-            <span className="font-medium">machine-learning research, applied cryptography, and hands-on offensive security</span>.
+            I research{" "}
+            <span className="font-medium">security and privacy in distributed and machine-learning systems</span>. As a{" "}
+            <span className="font-medium">Research Assistant</span> on a TÜBİTAK-funded IoT and critical-infrastructure security project, I built the measurement harness that quantifies what{" "}
+            <span className="italic">secure aggregation</span> costs in federated intrusion detection. I co-authored a{" "}
+            <span className="font-medium">Springer paper (ICCDM-2026, in press)</span> on defending smart grids against cyber-physical attacks, and wrote{" "}
+            <span className="font-medium">MCP-Guard</span>, a static security scanner for Model Context Protocol servers.
         </p>
 
         <p>
-            I came to security from{" "}
-            <span className="font-medium">full-stack engineering</span>, which is why my experiments ship as working, reproducible code. On{" "}
-            <span className="font-medium">Hack The Box</span> I&apos;ve reached{" "}
-            <span className="underline">Silver tier</span> across Active Directory, web, and privilege-escalation challenges. I&apos;m building toward a{" "}
-            <span className="font-medium">PhD in machine learning and security</span>: securing LLM-based agents, and privacy-preserving federated learning for critical systems.
+            My work spans{" "}
+            <span className="font-medium">machine-learning research, applied cryptography, and offensive security</span>, and ships as reproducible code. On{" "}
+            <span className="font-medium">Hack The Box</span> I hold{" "}
+            <span className="underline">Silver tier</span> across Active Directory, web, and privilege-escalation machines. My research focus is the{" "}
+            <span className="font-medium">security of LLM-based agents</span> and privacy-preserving federated learning for critical infrastructure.
         </p>
     </motion.section >)
 }

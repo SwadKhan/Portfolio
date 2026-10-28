@@ -49,9 +49,9 @@ export default function Intro() {
             >
                 <span className="font-bold">Hello, I&apos;m Swad.</span> I&apos;m a {" "}
                 <span className="font-bold">cybersecurity researcher</span> working on {" "}
-                <span className="font-bold">privacy-preserving machine learning for critical infrastructure</span>, and an active {" "}
-                <span className="italic">red-teamer</span> on {" "}
-                <span className="underline">Hack The Box</span>. I study the security of LLM agents, benchmark secure aggregation for federated learning, and break systems to understand how they fail.
+                <span className="font-bold">privacy-preserving machine learning for critical infrastructure</span>, with {" "}
+                <span className="italic">red-team practice</span> on {" "}
+                <span className="underline">Hack The Box</span>. I research the security of LLM-based agents and secure aggregation in federated learning, and test systems adversarially to understand how they fail.
             </motion.h1>
             <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
                 initial={{ opacity: 0, y: 100 }}
