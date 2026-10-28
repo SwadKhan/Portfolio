@@ -51,7 +51,7 @@ export default function Intro() {
                 <span className="font-bold">cybersecurity researcher</span> working on {" "}
                 <span className="font-bold">privacy-preserving machine learning for critical infrastructure</span>, and an active {" "}
                 <span className="italic">red-teamer</span> on {" "}
-                <span className="underline">Hack The Box</span>. I benchmark secure aggregation for federated learning, and I break systems to understand how they fail.
+                <span className="underline">Hack The Box</span>. I study the security of LLM agents, benchmark secure aggregation for federated learning, and break systems to understand how they fail.
             </motion.h1>
             <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'
                 initial={{ opacity: 0, y: 100 }}

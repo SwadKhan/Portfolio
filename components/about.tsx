@@ -26,8 +26,9 @@ export default function About() {
             I work on the question of{" "}
             <span className="font-medium">what&apos;s worth protecting in distributed systems</span>. As a{" "}
             <span className="font-medium">Research Assistant</span> on a TÜBİTAK-funded IoT &amp; Critical-Infrastructure Security project, I built the harness that measures what{" "}
-            <span className="italic">secure aggregation</span> really costs in federated learning, and I co-authored a{" "}
-            <span className="font-medium">Springer paper (ICCDM-2026, in press)</span> on defending smart grids against cyber-physical attacks. My background spans{" "}
+            <span className="italic">secure aggregation</span> really costs in federated learning. In a separate case study I co-authored a{" "}
+            <span className="font-medium">Springer paper (ICCDM-2026, in press)</span> on defending smart grids against cyber-physical attacks, and I built{" "}
+            <span className="font-medium">MCP-Guard</span>, a security scanner for MCP servers. My background spans{" "}
             <span className="font-medium">machine-learning research, applied cryptography, and hands-on offensive security</span>.
         </p>
 
@@ -36,7 +37,7 @@ export default function About() {
             <span className="font-medium">full-stack engineering</span>, which is why my experiments ship as working, reproducible code. On{" "}
             <span className="font-medium">Hack The Box</span> I&apos;ve reached{" "}
             <span className="underline">Silver tier</span> across Active Directory, web, and privilege-escalation challenges. I&apos;m building toward a{" "}
-            <span className="font-medium">PhD in privacy-preserving machine learning for critical systems</span>.
+            <span className="font-medium">PhD in machine learning and security</span>: securing LLM-based agents, and privacy-preserving federated learning for critical systems.
         </p>
     </motion.section >)
 }

@@ -2,7 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import { FaShieldAlt, FaFlask } from "react-icons/fa";
-import visaHubImg from "@/public/Visa_hub.png";
+import flHarnessImg from "@/public/fl-harness.png";
+import mcpGuardImg from "@/public/mcpguard.png";
 import dragonNews from "@/public/dragonNews.png";
 import chatbotProImg from "@/public/chatbotpro.png";
 
@@ -42,7 +43,7 @@ export const experiencesData = [
         title: "B.Sc. Thesis: SAAD, Smartphone-Addiction Detection",
         location: "BRAC University, Dhaka",
         description:
-            "Detected smartphone addiction from seven days of usage and sensor data across 30 participants, combining K-Means/K-Medoids clustering with LSTM-based activity recognition; validated against SAS-SV scores with 87% accuracy.",
+            "Detected smartphone addiction from seven days of usage and sensor data across 30 participants, combining K-Means/K-Medoids clustering with LSTM-based activity recognition; validated against SAS-SV scores; 28% of participants showed addictive behaviour. Manuscript under review at Frontiers.",
         icon: React.createElement(FaFlask),
         date: "2022 - 2023",
     },
@@ -63,20 +64,28 @@ export const experiencesData = [
         date: "Jul 2023 - Oct 2023",
     },
     {
-        title: "M.Sc. Cybersecurity: Web Security & Cryptology",
-        location: "CyberMACS / Kadir Has University, Istanbul",
+        title: "M.Sc. Applied Cybersecurity: Erasmus Mundus (CyberMACS)",
+        location: "Kadir Has University, Istanbul (Year 1) · Ss. Cyril and Methodius University, Skopje (Year 2)",
         description:
-            "Graduate study focused on applied cryptography, web security, and privacy-preserving machine learning, deepening the theoretical foundations behind my research and offensive-security work.",
+            "Erasmus Mundus Joint Master scholarship. Year 1 GPA 3.32/4.00; Year 2 on the Web Security and Cryptology track. Expected graduation October 2027.",
         icon: React.createElement(LuGraduationCap),
         date: "2025 - present",
     },
     {
-        title: "Research Assistant: IoT & Critical-Infrastructure Security",
-        location: "TÜBİTAK-funded project, Kadir Has University",
+        title: "Research Case Study: Cyber-Physical Defence in Smart Grids",
+        location: "Kadir Has University, with Assoc. Prof. Oğuzhan Ceylan",
         description:
-            "Designed and implemented a benchmarking harness for secure aggregation in federated learning, measuring latency, communication overhead, and energy cost on the Edge-IIoT dataset (PyTorch, scikit-learn). Co-authored a Springer paper (ICCDM-2026, in press) on cyber-physical defence of smart grids.",
+            "Applied meta-heuristic algorithms (GA, PSO) to mitigate cyber-physical attacks on OpenDSS distribution-grid simulations. Published at ICCDM-2026 (Springer, in press).",
         icon: React.createElement(FaFlask),
-        date: "2025 - present",
+        date: "2025 - 2026",
+    },
+    {
+        title: "Research Assistant: TÜBİTAK 1001 Project",
+        location: "Kadir Has University (Secure Federated Learning for Critical Infrastructures)",
+        description:
+            "Built a measurement harness for secure aggregation in federated intrusion detection (Edge-IIoT) on a four-node Raspberry Pi testbed. Additive masking cost +4.8% uplink and under 0.34 ms per round; an 8-round schedule matched 30-round detection quality with 3.7× less uplink. Manuscript in preparation.",
+        icon: React.createElement(FaFlask),
+        date: "Dec 2025 - Sep 2026",
     },
 ] as const;
 
@@ -164,16 +173,27 @@ export const publicationData = {
 } as const;
 
 export const awardsData = [
-    "Vice Chancellor's List, 4 semesters (BRAC University)",
+    "Erasmus Mundus Joint Master scholarship (European Union), 2025 - 2027",
+    "Best Collaborators award, IACyC 2026 hackathon (Kadir Has University)",
+    "Vice-Chancellor's List (2 semesters) and Dean's List (2 semesters), BRAC University",
     "50% merit scholarship, 10 consecutive semesters (BRAC University)",
     "2nd Runner-Up, MIST Inter-University ICT Innovation Fest 2021",
 ] as const;
 
 export const projectsData = [
     {
+        title: "MCP-Guard: Security Scanner for MCP Servers",
+        description:
+            "Static scanner for Model Context Protocol servers with five rules mapped to the OWASP Top 10 for LLM Applications 2025: tool poisoning, excessive permissions, rug-pull detection with SHA-256 lockfiles, unsanitised tool output and hard-coded secrets. CLI with CI gating; 56 tests; MIT licence.",
+        tags: ["Python", "LLM Security", "MCP", "OWASP"],
+        imageUrl: mcpGuardImg,
+        projectUrl: "https://github.com/SwadKhan/MCP_Guard",
+        repoUrl: "https://github.com/SwadKhan/MCP_Guard",
+    },
+    {
         title: "ChatBotPRO: Multi-Modal RAG System",
         description:
-            "A deployed multi-modal RAG system (LangChain, ChromaDB, Groq LLaMA 3.1) answering strictly from an uploadable knowledge base of PDFs, images (OCR), and PowerPoint files, with citation support. Built with prompt-injection hardening and API-key hygiene.",
+            "A deployed multi-modal RAG system (LangChain, ChromaDB, Groq LLaMA 3.1) answering strictly from an uploadable knowledge base of PDFs, images (OCR), and PowerPoint files, with citation support. A strict prompt restricts answers to the retrieved context; API keys stay in environment variables.",
         tags: ["Python", "LangChain", "ChromaDB", "Streamlit"],
         imageUrl: chatbotProImg,
         projectUrl: "https://chatbotpro-fnivcyjrojgjema6cqoumv.streamlit.app/",
@@ -182,9 +202,9 @@ export const projectsData = [
     {
         title: "Federated Learning Secure-Aggregation Benchmark",
         description:
-            "Research harness (TÜBİTAK) measuring the real cost of secure aggregation in federated learning (latency, communication overhead, and energy) on the Edge-IIoT dataset. Basis for ongoing work on sparse, privacy-preserving FL for critical infrastructure.",
-        tags: ["PyTorch", "Federated Learning", "Privacy", "Research"],
-        imageUrl: visaHubImg,
+            "Research harness (TÜBİTAK) measuring what secure aggregation costs in federated intrusion detection on a Raspberry Pi testbed: communication, latency and CPU time. Its noise floor comes from a quantity theory says must be zero, which caught a misleading single-run result.",
+        tags: ["Python", "scikit-learn", "Optuna", "Federated Learning", "Privacy"],
+        imageUrl: flHarnessImg,
         projectUrl: "https://github.com/SwadKhan",
         repoUrl: "",
     },
@@ -208,11 +228,14 @@ export const skillsData = [
     "Network Security",
     "Applied Cryptography",
     "LLM / AI Security",
+    "LLM Agents & MCP",
     "OSINT & Enumeration",
     // Research / ML
     "Python",
     "PyTorch",
     "scikit-learn",
+    "Optuna",
+    "Differential Privacy",
     "Federated Learning",
     "OpenDSS",
     // Tooling / Engineering
