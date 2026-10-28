@@ -2,7 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import { FaShieldAlt, FaFlask } from "react-icons/fa";
-import flHarnessImg from "@/public/fl-harness.png";
+import ecoAgentImg from "@/public/eco-agent.png";
+import shipAuthImg from "@/public/shipofflineauth.png";
 import mcpGuardImg from "@/public/mcpguard.png";
 import dragonNews from "@/public/dragonNews.png";
 import chatbotProImg from "@/public/chatbotpro.png";
@@ -201,12 +202,21 @@ export const projectsData = [
         repoUrl: "https://github.com/SwadKhan/ChatBotPRO",
     },
     {
-        title: "Federated Learning Secure-Aggregation Benchmark",
+        title: "Eco-Agent: LLM Civic Air-Quality Platform",
         description:
-            "Research harness (TÜBİTAK) measuring what secure aggregation costs in federated intrusion detection on a Raspberry Pi testbed: communication, latency and CPU time. Its noise floor comes from a quantity theory says must be zero, which caught a misleading single-run result.",
-        tags: ["Python", "scikit-learn", "Optuna", "Federated Learning", "Privacy"],
-        imageUrl: flHarnessImg,
-        projectUrl: "https://github.com/SwadKhan",
+            "An anonymous-by-design civic platform (no accounts, no IP logging) that surfaces live air-quality sensor data, lets residents file anonymous pollution reports, and uses an LLM to draft municipal briefings. Built at Hacktoberfest 2026, Skopje, with LangChain and an open-weight model served through Groq.",
+        tags: ["Python", "LangChain", "Groq", "LLM", "Privacy"],
+        imageUrl: ecoAgentImg,
+        projectUrl: "https://github.com/SwadKhan/Eco-Agent",
+        repoUrl: "",
+    },
+    {
+        title: "ShipOfflineAuth: Offline Port Credentialing",
+        description:
+            "An offline-first credentialing system for ships and ports: identities are issued and verified through printed QR codes that need no network connection at the point of check. Built with team Sinking Ship at the IACyC 2026 hackathon, where it won the Best Collaborators award.",
+        tags: ["Authentication", "QR", "Offline-first", "Security"],
+        imageUrl: shipAuthImg,
+        projectUrl: "https://github.com/SwadKhan/ShipOfflineAuth",
         repoUrl: "",
     },
     {
