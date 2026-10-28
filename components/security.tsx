@@ -43,7 +43,8 @@ export default function Security() {
             </p>
             <p className="mb-8 text-sm italic text-gray-500 dark:text-white/50">
                 Overviews only, no step-by-step exploitation, in line with Hack
-                The Box&apos;s content policy. Retired machines only.
+                The Box&apos;s content policy. Active machines are listed as
+                solved only, with no details until they retire.
             </p>
 
             {/* Peer-reviewed publication */}

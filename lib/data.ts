@@ -93,7 +93,8 @@ export const experiencesData = [
 // POLICY NOTE: high-level overviews only (vulnerability CLASS and public CVE
 // references, NO step-by-step exploitation). This keeps the showcase compliant
 // with Hack The Box's content rules while still evidencing skill.
-// TODO(Swad): verify each machine is RETIRED and add the exact CVE IDs for
+// Active machines (Sedna, Reactor, Wallos, WingData) show no attack details.
+// TODO(Swad): when one retires, restore its overview; add the exact CVE IDs for
 // your actual solves; cards render CVE chips only when the array is non-empty.
 export const securityData = [
     {
@@ -150,10 +151,10 @@ export const securityData = [
         machine: "WingData",
         os: "Linux",
         difficulty: "Medium",
-        category: "Data Service Exploitation",
+        category: "Active machine",
         overview:
-            "Exploited an exposed data/API service to leak credentials, then reused them against internal services to move laterally and escalate.",
-        techniques: ["API abuse", "Credential reuse", "Lateral movement"],
+            "Solved (user and root). Details will be published once Hack The Box retires this machine.",
+        techniques: [] as string[],
         cve: [] as string[],
     },
 ] as const;
