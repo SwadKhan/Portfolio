@@ -76,7 +76,7 @@ export const experiencesData = [
         title: "Research Case Study: Cyber-Physical Defence in Smart Grids",
         location: "Kadir Has University, with Assoc. Prof. Oğuzhan Ceylan",
         description:
-            "Applied meta-heuristic algorithms (GA, PSO) to mitigate cyber-physical attacks on OpenDSS distribution-grid simulations. Published at ICCDM-2026 (Springer, in press).",
+            "Applied meta-heuristic algorithms (GA, PSO) to mitigate cyber-physical attacks on OpenDSS distribution-grid simulations. Accepted at ICCDM-2026 (Springer LNNS, in press).",
         icon: React.createElement(FaFlask),
         date: "2025 - 2026",
     },
@@ -171,7 +171,7 @@ export const certsData = [
 export const publicationData = {
     title: "Meta-Heuristic Optimization Approach for Cyber-Physical Defense in Smart Grids",
     authors: "Swad Mustasin Khan, Sacha Labastie, Oğuzhan Ceylan",
-    venue: "ICCDM-2026, Springer (in press)",
+    venue: "ICCDM-2026, Springer Lecture Notes in Networks and Systems (in press)",
 } as const;
 
 export const awardsData = [

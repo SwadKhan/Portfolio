@@ -26,8 +26,8 @@ export default function About() {
             I research{" "}
             <span className="font-medium">security and privacy in distributed and machine-learning systems</span>. As a{" "}
             <span className="font-medium">Research Assistant</span> on a TÜBİTAK-funded IoT and critical-infrastructure security project, I built the measurement harness that quantifies what{" "}
-            <span className="italic">secure aggregation</span> costs in federated intrusion detection. I co-authored a{" "}
-            <span className="font-medium">Springer paper (ICCDM-2026, in press)</span> on defending smart grids against cyber-physical attacks, and wrote{" "}
+            <span className="italic">secure aggregation</span> costs in federated intrusion detection. I first-authored a{" "}
+            <span className="font-medium">Springer LNNS paper (ICCDM-2026, in press)</span> on defending smart grids against cyber-physical attacks, and wrote{" "}
             <span className="font-medium">MCP-Guard</span>, a static security scanner for Model Context Protocol servers.
         </p>
 
